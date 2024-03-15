@@ -1,6 +1,6 @@
 import classes from "./mainHeader/main-header-background.module.css";
 
-export default function mainHeaderBackground() {
+export default function MainHeaderBackground() {
   return (
     <div className={classes["header-background"]}>
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
