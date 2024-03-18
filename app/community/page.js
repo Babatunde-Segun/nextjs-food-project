@@ -31,7 +31,7 @@ export default function CommunityPage() {
               src={eventsIcon}
               alt='A crowd of people at a cooking event'
             />
-            <p>Participate in exclusive events</p>
+            <p>Be involved in exclusive events</p>
           </li>
         </ul>
       </main>
