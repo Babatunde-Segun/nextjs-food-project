@@ -1,7 +1,7 @@
 .header {
   display: flex;
   padding: 2rem 1rem;
-  gap: 3rem;
+  gap: 6rem;
   margin: auto;
   max-width: 80rem;
 }
@@ -21,6 +21,7 @@
 
 .headerText {
   padding: 0.5rem 1rem 0 1rem;
+  font-size: 2rem;
   color: #ddd6cb;
   max-width: 40rem;
   animation: fade-slide-in-from-right 1s ease-out forwards;
@@ -35,7 +36,7 @@
 }
 
 .creator {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #cfa69b;
   font-style: italic;
 }
@@ -56,12 +57,8 @@
   text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
 }
 
-.summary {
-  font-size: 1.5rem;
-}
-
 .instructions {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   background-color: #6e6464;
   color: #13120f;
@@ -123,5 +120,22 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  /* .header {
+    gap: 2rem;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image {
+    width: 100%;
   }
 }

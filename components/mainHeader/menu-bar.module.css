@@ -1,0 +1,29 @@
+.menu-icon {
+  display: none; /* Hide menu icon by default */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon for smaller screens */
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background-color: #444; /* Background color when menu is active */
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
