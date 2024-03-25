@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  gap: 9.6rem;
+  gap: 4.8rem;
   margin: 3rem auto;
   width: 90%;
   /* max-width: 75rem; */
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   .header {
     flex-direction: column;
   }

@@ -15,7 +15,7 @@ export default function MainHeader() {
       <header className={classes.header}>
         <Link href='/' className={classes.logo}>
           <Image src={logoImg} priority alt='A plate with food on it' />
-          Next Level cuisine
+          Next Level Food
         </Link>
 
         <MenuBar />

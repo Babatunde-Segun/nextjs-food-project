@@ -7,6 +7,8 @@
 html {
   font-family: "Quicksand", sans-serif;
   font-size: 62.5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
@@ -42,8 +44,35 @@ body {
   color: #ddd8d8;
 }
 
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 90%;
+  }
+}
 @media screen and (max-width: 769px) {
   html {
     font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 255px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media screen and (max-width: 200px) {
+  html {
+    font-size: 25%;
   }
 }
