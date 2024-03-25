@@ -41,7 +41,7 @@ export default function MenuBar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link href='/commnunity' className={classes.navLink}>
+                <Link href='/community' className={classes.navLink}>
                   Foodies Community
                 </Link>
               </li>
