@@ -15,7 +15,7 @@
 // };
 
 const nextConfig = {
-  distDir: "build",
+  distDir: "dist",
 
   images: {
     remotePatterns: [
