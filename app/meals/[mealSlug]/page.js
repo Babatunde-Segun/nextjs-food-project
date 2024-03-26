@@ -17,6 +17,7 @@ export async function generateMetaData({ params }) {
   };
 }
 function MealDetailsPage({ params }) {
+  console.log(params.mealSlug);
   const meal = getMeal(params.mealSlug);
 
   if (!meal) {
