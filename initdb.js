@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 const sql = require("better-sqlite3");
 const db = sql("meals.db");
 
@@ -164,6 +166,16 @@ const dummyMeals = [
   },
 ];
 
+// try to solve sql issue with stackoverflow
+
+const tmpCerDir = "/tmp/cer";
+if (!fs.existsSync(tmpCerDir)) {
+  fs.mkdirSync(tmpCerDir, { recursive: true });
+  console.log("Created directory:", tmpCerDir);
+} else {
+  console.log("Directory already exists:", tmpCerDir);
+}
+
 db.prepare(
   `
    CREATE TABLE IF NOT EXISTS meals (
@@ -199,3 +211,4 @@ async function initData() {
 }
 
 initData();
+db.close();
